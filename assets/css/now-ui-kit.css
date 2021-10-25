@@ -95,6 +95,15 @@
   background: #f96332;
 }
 
+@font-face {
+  font-family: BarlowCondensed;
+  src: url('BarlowSemiCondensed-Medium.ttf');
+}
+
+.font-barlow{
+  font-family: BarlowCondensed;
+}
+
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-blue,
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-blue {
   color: #fff;
