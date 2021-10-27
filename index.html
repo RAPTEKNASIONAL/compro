@@ -25,15 +25,26 @@
   <link rel="stylesheet" href="fontawesome/path/to/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .fa-18 {
+      font-size: 20px;
+    }
+  </style>
+
 </head>
 
-<body class="landing-page sidebar-collapse" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+<body class="landing-page sidebar-collapse"
+  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-transparent " color-on-scroll="400">
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="" title="" data-placement="bottom" target="">
-          <img src="assets/img/logo_rtn.png" alt="" style="width: 8%;" class="mx-3">
+          <img src="assets/img/logo_rtn.png" alt="" style="width: 15%;" class="mx-3">
           <!-- Rapier Teknologi Nasional -->
         </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -45,7 +56,7 @@
       </div>
       <div class="collapse navbar-collapse justify-content-end" id="navigation"
         data-nav-image="../assets/img/blurred-image-1.jpg">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav fa-18">
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
@@ -127,17 +138,18 @@
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
     </div>
-    <div class="section" id="product" style="background-image: url('assets/img/puskesmas.png'); height: 100%; width: 100%; padding: 0px;">
+    <div class="section" id="product"
+      style="background-image: url('assets/img/puskesmas.png'); height: 100%; width: 100%; padding: 0px;">
       <div style="background-color: rgba(0, 148, 255, 0.9);">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
               <h2 class="title text-white">Product</h2>
             </div>
-          </div>  
+          </div>
           <div class="section-story-overview">
             <div class="row">
               <div class="col-md text-right text-white">
@@ -164,44 +176,43 @@
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="row">
-        <div class="col-md-8 ml-auto mr-auto text-center">
-          <h2 class="title">Other Product</h2>
-          <hr style="width: 100px;">
-          <div class="row p-2">
-            <div class="col-lg-4">
-              <div class="border shadow p-1 mb-2 rounded pt-3 px-3">
-                <img src="assets/img/tphd.jpg" alt="" class="rounded" style="height:150px">
-                <div class="bg-dark rounded px-3 text-light ">
-                  <h4 class="title text-left "> TPHD</h4>
-                  <p class="text-left " style="padding-bottom: 10px;"> Aplikasi Ujian untuk calon Tim Pemandu Haji
-                    Daerah.
-                  </p>
+    <hr style="width: 100px;">
+    <div class="">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block" src="assets/img/tphd.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block text-dark">
+                  <br>
+                  <h5>TPHD - Aplikasi Ujian untuk calon Tim Pemandu Haji Daerah.</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="assets/img/kia.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block text-dark">
+                  <h5>KIA - Aplikasi Pemantauan Kesehatan Ibu dan Anak.</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="assets/img/pak.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>PAKDE - Aplikasi yang digunakan untuk melakukan Penilaian Angka Kredit Jabatan Fungsional.</h5>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="border shadow p-1 mb-2 rounded pt-3 px-3">
-                <img src="assets/img/kia.jpg" alt="" class="rounded" style="height:150px">
-                <div class="bg-dark rounded px-3 text-light ">
-                  <h4 class="title text-left "> KIA</h4>
-                  <p class="text-left" style="padding-bottom: 10px;"> Aplikasi Pendataan Kesehatan Ibu dan Anak.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="border shadow p-1 mb-2 rounded pt-3 px-3">
-                <img src="assets/img/pak.jpg" alt="" class="rounded" style="height:150px">
-                <div class="bg-dark rounded px-3 text-light ">
-                  <h4 class="title text-left "> PAK</h4>
-                  <p class="text-left " style="padding-bottom: 10px;"> Aplikasi Penilaian Kenaikan Pangkat Jabatan
-                    Fungsional.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <i class="now-ui-icons arrows-1_minimal-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <i class="now-ui-icons arrows-1_minimal-right"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -219,14 +230,16 @@
               <p class="text-light">Datanglah ke kantor kami</p>
             </div>
             <div class="col-md text-white text-left">
-              <p style="padding-left: 0px;">Jika anda mengalami kesulitan, jangan segan dan ragu untuk berdiskusi dengan kami, kami akan senantiasa
+              <p style="padding-left: 0px;">Jika anda mengalami kesulitan, jangan segan dan ragu untuk berdiskusi dengan
+                kami, kami akan senantiasa
                 meberikan solusi
                 yang terbaik untuk masalah anda</p>
               <ul style="padding-left: 1px; list-style-type: none;">
                 <li><img src="assets/img/icon/name.png" alt="">&nbsp; RAPTEKNASIONAL</li>
-                <li><img src="assets/img/icon/telp.png" alt="">&nbsp; +62 857-4012-2226</li>
-                <li><img src="assets/img/icon/gmail.png" alt="">&nbsp; rapteknasional@gmail.com</li>
-                <li><img src="assets/img/icon/maps.png" alt="">&nbsp; Jl. Mulawarman Selatan Raya, Kramas, Kec. Tembalang, Kota Semarang, Jawa Tengah 50266 ( Ruko Nomor 1 )
+                <li><img src="assets/img/icon/telp.png" alt="">&nbsp; 024-76401235</li>
+                <li><img src="assets/img/icon/gmail.png" alt="">&nbsp; helpdesk@rapiertechnology.co.id</li>
+                <li><img src="assets/img/icon/maps.png" alt="">&nbsp; Jl. Mulawarman Selatan Raya, Kramas, Kec.
+                  Tembalang, Kota Semarang, Jawa Tengah 50266 ( Ruko MRC ,No 1 )
                 </li>
               </ul>
             </div>
@@ -243,7 +256,8 @@
               <!-- Rapier Teknologi Nasional -->
             </a>
             <h3 class="title" style="margin-bottom: 0px;"> Rapier Teknologi Nasional</h3>
-            <span style="padding-bottom: 5px;">Jl. Mulawarman Selatan Raya, Kramas, Kec. Tembalang, Kota Semarang, Jawa Tengah 50266 ( Ruko Nomor 1 )</span>
+            <span style="padding-bottom: 5px;">Jl. Mulawarman Selatan Raya, Kramas, Kec. Tembalang, Kota Semarang, Jawa
+              Tengah 50266 ( Ruko Nomor 1 )</span>
           </div>
         </div>
         <div class="col-lg-6 px-5">
